@@ -20,7 +20,7 @@ const DisplayDefaultSize = ({
       <p className="my-2 font-medium w-full bg-yellow-300/20 p-1 text-yellow-900">
         <span className="font-bold">Warning:</span> Displaying {defaultSize}
       </p>
-      <div className="mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8">
+      <div className="mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8 opacity-70">
         {screenshots.map((screenshot: number) => {
           return (
             <img
