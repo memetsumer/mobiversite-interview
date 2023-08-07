@@ -1,5 +1,6 @@
 import { DisplaySSBySize } from "./components/DisplayBySize";
 import SelectRegion from "./components/SelectRegion";
+import { GitHubLogoIcon } from "@radix-ui/react-icons";
 
 function App() {
   const sizes = ["67", "65", "61", "58", "55", "47", "40"];
@@ -9,6 +10,17 @@ function App() {
       <div className="flex items-center justify-between w-1/2">
         <p>Mehmet Sumer</p>
         <SelectRegion />
+      </div>
+      <div className="flex items-center justify-start w-1/2 mt-4">
+        <GitHubLogoIcon className="mr-2" />
+        <a
+          href="https://github.com/memetsumer/mobiversite-interview"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline"
+        >
+          Source code
+        </a>
       </div>
 
       {sizes.map((size) => {
