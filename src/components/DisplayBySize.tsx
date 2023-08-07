@@ -24,9 +24,9 @@ export const DisplaySSBySize = ({ size }: { size: string }) => {
   }
 
   return (
-    <div className="m-6 pt-2 py-4 px-6 rounded-lg bg-slate-100 w-1/2">
+    <div className="m-6 pt-2 py-4 px-6 rounded-lg bg-slate-100 w-full lg:w-1/2">
       <p className="my-2 font-medium">{size} Display</p>
-      <div className="mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8">
+      <div className="mx-auto grid grid-cols-3 gap-8">
         {screenshots.map((screenshot: number) => {
           return (
             <img

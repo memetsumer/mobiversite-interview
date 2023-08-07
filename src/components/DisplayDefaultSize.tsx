@@ -15,19 +15,19 @@ const DisplayDefaultSize = ({
     return <NoScreenShots region={`EN and ${region}`} size="65" />;
   }
   return (
-    <div className="m-6 pt-2 py-4  px-6 rounded-lg bg-slate-100">
+    <div className="m-6 pt-2 py-4 px-6 rounded-lg bg-slate-100 w-full lg:w-1/2">
       <p className="my-2 font-medium">{size} Display</p>
       <p className="my-2 font-medium w-full bg-yellow-300/20 p-1 text-yellow-900">
         <span className="font-bold">Warning:</span> Displaying {defaultSize}
       </p>
-      <div className="mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8 opacity-70">
+      <div className="mx-auto grid grid-cols-3 gap-8 opacity-70">
         {screenshots.map((screenshot: number) => {
           return (
             <img
               key={screenshot}
               src={`appStoreSS/${region} ${defaultSize} ${screenshot}.jpg`}
               alt="appStoreScreenShots"
-              className="object-cover rounded-md max-w-[200px]"
+              className="object-cover rounded-md"
             />
           );
         })}
